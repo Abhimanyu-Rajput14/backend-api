@@ -11,7 +11,7 @@ const options = {
         },
         servers: [
             {
-                url: 'http://localhost:5000',
+                url: 'https://backend-api-blkj.onrender.com',
             },
         ],
     },
@@ -22,7 +22,7 @@ const swaggerSpec = swaggerJsdoc(options);
 
 const setupSwaggerDocs = (app) => {
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-    console.log('Swagger Docs available at http://localhost:5000/api-docs');
+    console.log('Swagger Docs available at https://backend-api-blkj.onrender.com/api-docs');
 };
 
 module.exports = setupSwaggerDocs;
